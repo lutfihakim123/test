@@ -1,0 +1,29 @@
+<script>
+  const realArray = ["cook", "save", "taste", "aves", "vase", "state", "map"];
+  var array1 = [];
+  var array2 = [];
+  var array3 = [];
+  var array4 = [];
+  for (let i = 0; i < realArray.length; i++) {
+    if (realArray[i] == "cook") {
+      array1[0] = realArray[i];
+    } else if (
+      realArray[i] == "save" ||
+      realArray[i] == "aves" ||
+      realArray[i] == "vase"
+    ) {
+      countArray2 = array2.length;
+      array2[countArray2] = realArray[i];
+      countArray2++;
+    } else if (realArray[i] == "taste" || realArray[i] == "state") {
+      countArray3 = array3.length;
+      array3[countArray3] = realArray[i];
+      countArray3++;
+    } else {
+      array4[0] = realArray[i];
+    }
+  }
+  newObject = [];
+  newObject.unshift(array1, array2, array3, array4);
+  console.log(newObject);
+</script>
